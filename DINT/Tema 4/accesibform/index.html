@@ -50,35 +50,28 @@
     </ol>
 </header>
     <main>
-        <form id="access-form" style="display: flex;flex-direction: column">
-            <!--Name Input-->
-            <div id="username-field" class="field">
-                <label id="username-label" for="username">Nombre de usuario*</label>
-                <input id="username" type="text" name="username" maxlength="20" aria-describedby="username-label" for="access-form" required="">
-                <div class="error-message"></div>
+        <form id="formularioAccesible" style="display: flex;flex-direction: column">
+            <div id="usuario-field" aria-label="nombre">
+                <label id="usuario-label" for="usuario">Nombre*</label>
+                <input id="usuario" type="text" name="username" maxlength="20" aria-describedby="username-label" for="formularioAccesible" required="">
             </div>
-            <!-- Lastname Input-->
-            <div id="lastname-field" class="field">
-                <label id="lastname-label" for="lastname">Primer Apellido*</label>
-                <input id="lastname" type="text" name="lastname" maxlength="20" aria-describedby="lastname-label" for="access-form" required="">
-                <div class="error-message"></div>
+            <div id="apellido-field" aria-label="apellido">
+                <label id="apellido-label" for="apellido">Primer Apellido*</label>
+                <input id="apellido" type="text" name="lastname" maxlength="20" aria-describedby="lastname-label" for="formularioAccesible" required="">
             </div>
-            <!-- Email Input-->
-            <div id="email-field" class="field">
+            <div id="email-field" aria-label="Correo electronico">
                 <label id="email-label" for="email">Email*</label>
-                <input  placeholder="email@email.com" type="email"id="email" type="text" name="email" maxlength="40" aria-describedby="email-label" for="access-form" required="">
-                <div class="error-message"></div>
+                <input  placeholder="email@email.com" type="email"id="email" type="text" name="email" maxlength="40" aria-describedby="email-label" for="formularioAccesible" required="">
             </div>
-            <!-- Phone Number Input-->
-            <div id="phone-field" class="field">
-                <label id="phone-label" for="phone">Número de teléfono</label>
-                <input id="phone" type="text" name="phone" aria-describedby="phone-label" for="access-form" placeholder="XXX-XXX-XXX">
+            <div id="telefono-field" class="field">
+                <label id="telefono-label" for="telefono">Número de teléfono</label>
+                <input id="telefono" type="text" name="phone" aria-describedby="telefono-label" for="formularioAccesible" placeholder="XXX-XXX-XXX">
                 <div class="error-message"></div>
             </div>
             <p style="color: red">*Campos obligatorios</p>
             <div class="buttons">
                 <input id="submit" type="submit" name="Enviar" aria-label="Enviar">
-                <input id="reset" type="reset" name="Limpiar" aria-label="Reestablecer">
+                <input id="reset" type="reset" name="Limpiar" aria-label="Borrar campos">
             </div>
         </form>
     </main>
