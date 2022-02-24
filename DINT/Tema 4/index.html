@@ -24,7 +24,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a id="Nosotros" class="nav-link" href="/DAWC">DAWC</a>
@@ -42,33 +42,33 @@
                 </div>
             </div>
         </nav>
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item" aria-current="page"><a href="/">Inicio</a></li>
-            <li class="breadcrumb-item" aria-current="page"><a href="/DINT">DINT</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Tema 4</li>
+        <ol class="breadcrumb" aria-label="migas de pan">
+            <li class="breadcrumb-item" aria-label="volver a inicio" aria-current="page"><a href="/">Inicio</a></li>
+            <li class="breadcrumb-item" aria-label="volver a Diseño de interfaces"aria-current="page"><a href="/DINT">DINT</a></li>
+            <li class="breadcrumb-item active" aria-label="Pagina actual" aria-current="page">Tema 4</li>
         </ol>
     </header>
     <body>
-    <main class="container ">
+    <main class="container" role="region">
         <div class="card w-75">
             <div class="card-body">
-                <h5 class="card-title">Accesibilidad</h5>
-                <p class="card-text">Practica sobre accesibilidad</p>
-                <a href="/DINT/Tema 4/accesibilidad" class="btn btn-primary">IR</a>
+                <h5 class="card-title" aria-label="titulo">Accesibilidad</h5>
+                <p class="card-text" aria-label="texto">Practica sobre accesibilidad</p>
+                <a aria-label="enlace al contenido descrito" href="/DINT/Tema 4/accesibilidad" class="btn btn-primary">IR</a>
             </div>
         </div>
-			<div class="card w-75">
+	<div class="card w-75" role="region">
             <div class="card-body">
-                <h5 class="card-title">Accesibilidad</h5>
-                <p class="card-text">Multimedia accesible</p>
-                <a href="/DINT/Tema 4/acesiblevid" class="btn btn-primary">IR</a>
+                <h5 class="card-title"  aria-label="titulo">Accesibilidad</h5>
+                <p class="card-text" aria-label="texto ">Multimedia accesible</p>
+                <a href="/DINT/Tema 4/acesiblevid" aria-label="enlace al contenido descrito" class="btn btn-primary">IR</a>
             </div>
             </div>
-			<div class="card w-75">
+	<div class="card w-75" role="region" aria-label="tarjeta con contenido de la pagina">
             <div class="card-body">
-                <h5 class="card-title">Accesibilidad</h5>
-                <p class="card-text">Formulario accesible</p>
-                <a href="/DINT/Tema 4/accesibform" class="btn btn-primary">IR</a>
+                <h5 class="card-title" aria-label="titulo">Accesibilidad</h5>
+                <p class="card-text" aria-label="texto">Formulario accesible</p>
+                <a href="/DINT/Tema 4/accesibform" aria-label="enlace al contenido descrito" class="btn btn-primary">IR</a>
             </div>
         </div>
     </main>
