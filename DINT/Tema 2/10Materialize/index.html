@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Plantilla 1 - Materialize</title>
@@ -11,6 +12,43 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/img/favicon.png" alt="" width="30" height="30">
+      </a>
+    </div>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">INICIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a id="Nosotros" class="nav-link" href="/DAWC">DAWC</a>
+          </li>
+          <li class="nav-item">
+            <a id="Servicios" class="nav-link" href="/DAWS">DAWS</a>
+          </li>
+          <li class="nav-item">
+            <a id="Contacto" class="nav-link" href="/DAW">DAW</a>
+          </li>
+          <li class="nav-item">
+            <a id="Alumno" class="nav-link" href="/DINT">DINT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item" aria-current="page"><a href="/">Inicio</a></li>
+    <li class="breadcrumb-item" aria-current="page"><a href="/DINT">DINT</a></li>
+    <li class="breadcrumb-item" aria-current="page"><a href="/DINT/Tema 2">Tema 2</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Materialize del mockup</li>
+  </ol>
+</header>
  <main>
   <nav class="red.darken-4" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Inicio</a>
