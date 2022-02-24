@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="sp">
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagenes Responsive</title>
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Open+Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter" >
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <title>Simple video control</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 </head>
 <body>
     <header>
@@ -45,18 +40,49 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item" aria-current="page"><a href="/">Inicio</a></li>
             <li class="breadcrumb-item" aria-current="page"><a href="/DINT">DINT</a></li>
-            <li class="breadcrumb-item" aria-current="page"><a href="/DINT/Tema 1">Tema 1</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Portada</li>
+            <li class="breadcrumb-item" aria-current="page"><a href="/DINT/Tema 3">Tema 3</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Galeria de video</li>
         </ol>
-    </header>
-    <body>
-        <!--Insertamos en pdf dentro del html-->
-        <embed src="2.pdf" type="application/pdf" width="100%" height="720px" />
-        <div class="footer-container">
-            <footer class="wrapper">
-                <h3>Pablo Fernández Domínguez pablo.ferdom@educa.jcyl.es</h3>
-            </footer>
-        </div>
-    </body>
 
+        <h1>Example of custom controls</h1>
+        <button onclick="playVideo();" class="btn btn-success">
+            Play <i class="glyphicon glyphicon-play"></i>
+        </button>
+        <button onclick="pauseVideo();" class="btn btn-warning">
+            Pause <i class="glyphicon glyphicon-pause"></i>
+        </button>
+        <button onclick="stopVideo()" class="btn btn-danger">
+            Stop <i class="glyphicon glyphicon-stop"></i>
+        </button> 
+        <button onclick="rewindVideo();"  class="btn btn-info">
+            Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+        </button>
+       </header>
+<video width="480" height="320" controls="controls" id="myVideo">
+   <source src="movie_clip.mp4" type="video/mp4" />
+   <source src="movie_clip.ogg" type="video/ogg" />
+   Your browser does not support the <video> element. 
+</video>
+
+<script>
+    theVideo = document.querySelector("#myVideo");
+
+    function playVideo() {
+       theVideo.play();
+    }
+    
+    function pauseVideo() {
+       theVideo.pause();
+    }
+
+    function stopVideo() {
+       theVideo.currentTime = 0;
+       theVideo.pause();
+    }
+    
+    function rewindVideo() {
+       theVideo.currentTime = 0;
+    }
+</script>
+</body>
 </html>
