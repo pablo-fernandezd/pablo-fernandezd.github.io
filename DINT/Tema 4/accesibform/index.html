@@ -42,7 +42,7 @@
             </div>
         </div>
     </nav>
-    <ol class="breadcrumb">
+    <ol class="breadcrumb" aria-label="migas de pan">
         <li class="breadcrumb-item" aria-current="page"><a href="/">Inicio</a></li>
         <li class="breadcrumb-item" aria-current="page"><a href="/DINT">DINT</a></li>
         <li class="breadcrumb-item" aria-current="page"><a href="/DINT/Tema 4">Tema 4</a></li>
@@ -63,9 +63,13 @@
                 <label id="email-label" for="email">Email*</label>
                 <input  placeholder="email@email.com" type="email"id="email" type="text" name="email" maxlength="40" aria-describedby="email-label" for="formularioAccesible" required="">
             </div>
-            <div id="telefono-field" class="field">
+            <div id="edad-field" aria-label="edad">
+                <label id="edad-label" for="edad">Edad*</label>
+                <input id="edad" type="number" name="edad" min="0" max="130" value="0" aria-describedby="edad-label" for="formularioAccesible">
+            </div>
+            <div id="telefono-field" aria-label="Numero de telefono">
                 <label id="telefono-label" for="telefono">Número de teléfono</label>
-                <input id="telefono" type="text" name="phone" aria-describedby="telefono-label" for="formularioAccesible" placeholder="XXX-XXX-XXX">
+                <input id="telefono" type="tel" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-describedby="telefono-label" for="formularioAccesible" placeholder="XXX-XXX-XXX">
                 <div class="error-message"></div>
             </div>
             <p style="color: red">*Campos obligatorios</p>
