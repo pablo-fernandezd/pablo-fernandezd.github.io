@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes Responsive</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter" >
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/img/favicon.png" alt="" width="30" height="30">
+            </a>
+        </div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">INICIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="Nosotros" class="nav-link" href="/DAWC">DAWC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Servicios" class="nav-link" href="/DAWS">DAWS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Contacto" class="nav-link" href="/DAW">DAW</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Alumno" class="nav-link" href="/DINT">DINT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item" aria-current="page"><a href="/">Inicio</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="/DINT">DINT</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="/DINT/Tema 4">Tema 4</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Accesibilidad fom</li>
+    </ol>
+</header>
+    <main>
+        <form id="access-form" style="display: flex;flex-direction: column">
+            <!--Name Input-->
+            <div id="username-field" class="field">
+                <label id="username-label" for="username">Nombre de usuario*</label>
+                <input id="username" type="text" name="username" maxlength="20" aria-describedby="username-label" for="access-form" required="">
+                <div class="error-message"></div>
+            </div>
+            <!-- Lastname Input-->
+            <div id="lastname-field" class="field">
+                <label id="lastname-label" for="lastname">Primer Apellido*</label>
+                <input id="lastname" type="text" name="lastname" maxlength="20" aria-describedby="lastname-label" for="access-form" required="">
+                <div class="error-message"></div>
+            </div>
+            <!-- Email Input-->
+            <div id="email-field" class="field">
+                <label id="email-label" for="email">Email*</label>
+                <input  placeholder="email@email.com" type="email"id="email" type="text" name="email" maxlength="40" aria-describedby="email-label" for="access-form" required="">
+                <div class="error-message"></div>
+            </div>
+            <!-- Phone Number Input-->
+            <div id="phone-field" class="field">
+                <label id="phone-label" for="phone">Número de teléfono</label>
+                <input id="phone" type="text" name="phone" aria-describedby="phone-label" for="access-form" placeholder="XXX-XXX-XXX">
+                <div class="error-message"></div>
+            </div>
+            <p class="form alert">*Campos obligatorios</p>
+            <div class="buttons">
+                <input id="submit" type="submit" name="Enviar" aria-label="Enviar">
+                <input id="reset" type="reset" name="Limpiar" aria-label="Reestablecer">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Pie de pagina examen hecho por Pablo Fernandez Dominguez :D</p>
+    </footer>
+</body>
+</html>

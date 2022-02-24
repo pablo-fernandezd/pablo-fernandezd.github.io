@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Examen 2ev</title>
+</head>
+<body>
+    <header>
+        <img srcset="img/logo.jpg" sizes="(max-width: 400px) 15vw, (max-width: 768px) 50vw, 1200px" src="./img/imagen1_800.jpeg" alt="imagen1">
+        <p>Examen 2EV</p>
+        <div id="busqueda">
+            <input type="text" placeholder="Busqueda">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                 width="30" height="30"
+                 viewBox="0 0 30 30"
+                 style=" fill:#000000;"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path></svg>
+        </div>
+        <div id="busquedaMovil">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                 width="30" height="30"
+                 viewBox="0 0 30 30"
+                 style=" fill:#000000;"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path></svg>
+        </div>
+        
+    </header>
+    <main>
+        <article>
+            <section>
+                <!-- 
+                    Con srcset, insertamos separadas por comas distintas imagenes, comunicando al navegador el tamaño en ancho de esta
+                usando una w NO px, de esta manera en cada caso sabrá que imagen mostrar, con sizes, le damos un tamaño cuando cambie
+                el dispositivo desde el que estamos accediendo (necesario el viewport)
+            -->
+                <img srcset="./img/613x640.jpg 640w, ./img/1224x1280.jpg 1200w, ./img/1837x1920.jpg 1920w" sizes="(max-width: 400px) 100vw, (max-width: 768px) 50vw, 1200px" src="./img/1224x1280.png" alt="imagen de un gato blanco/marron claro con ojos azules">
+                <h2>
+                   Un gato muy bonito
+                </h2>
+                <p>
+                El gato bonito te mira, si, dan ganas de acariciarlo, hazlo, no araña es una preciosidad la cual ademas sirve para liberar estres después de un largo dia :D.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam at corporis culpa, dicta dolorum ducimus eaque eius eligendi eos exercitationem id incidunt ipsum iste labore minima minus modi nemo obcaecati odit quaerat quasi ratione repellat reprehenderit saepe sapiente soluta sunt temporibus ullam ut voluptas voluptatem voluptatum. Cumque cupiditate obcaecati officiis voluptatibus! Aspernatur exercitationem iure magnam, nostrum sequi vero.
+                </p>
+            </section>
+            <section>
+                <!-- Con el poster, introducimos una foto que es captura del propio video-->
+                <video controls poster="img/capturaVideo.jpg">
+                     <!-- Con type comunicamos al navegador de que formato es cada video aportado-->
+                    <source src="video/1280x720.mp4" type="video/mp4" />
+                    <source src="video/1280x720-converted.webm" type="video/webm"/>
+                    <!-- Con los siguientes atributos de track, decimos de que tipo es (subtitulos ó subtitulos que no son del mismo idioma)
+                    que el video, srclang el idioma en el que estan y con label un titulo para estos cuando sean leidos -->
+                    <track src="video/caption.vtt" kind="captions" srclang="es" label="Subtitulos" default>
+                    <track src="video/subtitles_en.vtt" kind="subtitles" srclang="en" label="Subtitles">
+                    <!-- Un parrafo por si el recurso no puede mostrarse sirva como alternativa-->
+                    <p>No pudo mostrarse el video</p>
+                </video>
+                <p>
+                    Este gato es muy gracioso por su cara, parece que este asombrado por estar grabado, quizá ve su propio reflejo en esta y preso de este asombro intenta atacarla Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad amet beatae blanditiis commodi culpa ducimus eaque eligendi error et exercitationem facere labore magnam maxime modi nam nemo neque, provident qui quidem quos recusandae totam ut vel voluptatem? Accusamus amet autem culpa cupiditate eligendi, esse exercitationem in magnam nam officia perspiciatis placeat quo sed similique temporibus velit voluptates! Officia, reiciendis.
+                </p>
+            </section>
+        </article>
+        <article>
+            <section>
+                <!-- 
+                    Con srcset, insertamos separadas por comas distintas imagenes, comunicando al navegador el tamaño en ancho de esta
+                usando una w NO px, de esta manera en cada caso sabrá que imagen mostrar, con sizes, le damos un tamaño cuando cambie
+                el dispositivo desde el que estamos accediendo (necesario el viewport)
+            -->
+                <img srcset="./img/613x640.jpg 640w, ./img/1224x1280.jpg 1200w, ./img/1837x1920.jpg 1920w" sizes="(max-width: 400px) 100vw, (max-width: 768px) 50vw, 1200px" src="./img/1224x1280.png" alt="imagen de un gato blanco/marron claro con ojos azules">
+                <h2>
+                   Un gato muy bonito
+                </h2>
+                <p>
+                El gato bonito te mira, si, dan ganas de acariciarlo, hazlo, no araña es una preciosidad la cual ademas sirve para liberar estres después de un largo dia :D.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam at corporis culpa, dicta dolorum ducimus eaque eius eligendi eos exercitationem id incidunt ipsum iste labore minima minus modi nemo obcaecati odit quaerat quasi ratione repellat reprehenderit saepe sapiente soluta sunt temporibus ullam ut voluptas voluptatem voluptatum. Cumque cupiditate obcaecati officiis voluptatibus! Aspernatur exercitationem iure magnam, nostrum sequi vero.
+                </p>
+            </section>
+            <section>
+                <!-- Con el poster, introducimos una foto que es captura del propio video-->
+                <video controls poster="img/capturaVideo.jpg">
+                     <!-- Con type comunicamos al navegador de que formato es cada video aportado-->
+                    <source src="video/1280x720.mp4" type="video/mp4" />
+                    <source src="video/1280x720-converted.webm" type="video/webm"/>
+                    <!-- Con los siguientes atributos de track, decimos de que tipo es (subtitulos ó subtitulos que no son del mismo idioma)
+                    que el video, srclang el idioma en el que estan y con label un titulo para estos cuando sean leidos -->
+                    <track src="video/caption.vtt" kind="captions" srclang="es" label="Subtitulos" default>
+                    <track src="video/subtitles_en.vtt" kind="subtitles" srclang="en" label="Subtitles">
+                    <!-- Un parrafo por si el recurso no puede mostrarse sirva como alternativa-->
+                    <p>No pudo mostrarse el video</p>
+                </video>
+                <p>
+                    Este gato es muy gracioso por su cara, parece que este asombrado por estar grabado, quizá ve su propio reflejo en esta y preso de este asombro intenta atacarla Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad amet beatae blanditiis commodi culpa ducimus eaque eligendi error et exercitationem facere labore magnam maxime modi nam nemo neque, provident qui quidem quos recusandae totam ut vel voluptatem? Accusamus amet autem culpa cupiditate eligendi, esse exercitationem in magnam nam officia perspiciatis placeat quo sed similique temporibus velit voluptates! Officia, reiciendis.
+                </p>
+            </section>
+        </article>
+        <article>
+            <section>
+                <!-- 
+                    Con srcset, insertamos separadas por comas distintas imagenes, comunicando al navegador el tamaño en ancho de esta
+                usando una w NO px, de esta manera en cada caso sabrá que imagen mostrar, con sizes, le damos un tamaño cuando cambie
+                el dispositivo desde el que estamos accediendo (necesario el viewport)
+            -->
+                <img srcset="./img/613x640.jpg 640w, ./img/1224x1280.jpg 1200w, ./img/1837x1920.jpg 1920w" sizes="(max-width: 400px) 100vw, (max-width: 768px) 50vw, 1200px" src="./img/1224x1280.png" alt="imagen de un gato blanco/marron claro con ojos azules">
+                <h2>
+                   Un gato muy bonito
+                </h2>
+                <p>
+                El gato bonito te mira, si, dan ganas de acariciarlo, hazlo, no araña es una preciosidad la cual ademas sirve para liberar estres después de un largo dia :D.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam at corporis culpa, dicta dolorum ducimus eaque eius eligendi eos exercitationem id incidunt ipsum iste labore minima minus modi nemo obcaecati odit quaerat quasi ratione repellat reprehenderit saepe sapiente soluta sunt temporibus ullam ut voluptas voluptatem voluptatum. Cumque cupiditate obcaecati officiis voluptatibus! Aspernatur exercitationem iure magnam, nostrum sequi vero.
+                </p>
+            </section>
+            <section>
+                <!-- Con el poster, introducimos una foto que es captura del propio video-->
+                <video controls poster="img/capturaVideo.jpg">
+                     <!-- Con type comunicamos al navegador de que formato es cada video aportado-->
+                    <source src="video/1280x720.mp4" type="video/mp4" />
+                    <source src="video/1280x720-converted.webm" type="video/webm"/>
+                    <!-- Con los siguientes atributos de track, decimos de que tipo es (subtitulos ó subtitulos que no son del mismo idioma)
+                    que el video, srclang el idioma en el que estan y con label un titulo para estos cuando sean leidos -->
+                    <track src="video/caption.vtt" kind="captions" srclang="es" label="Subtitulos" default>
+                    <track src="video/subtitles_en.vtt" kind="subtitles" srclang="en" label="Subtitles">
+                    <!-- Un parrafo por si el recurso no puede mostrarse sirva como alternativa-->
+                    <p>No pudo mostrarse el video</p>
+                </video>
+                <p>
+                    Este gato es muy gracioso por su cara, parece que este asombrado por estar grabado, quizá ve su propio reflejo en esta y preso de este asombro intenta atacarla Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad amet beatae blanditiis commodi culpa ducimus eaque eligendi error et exercitationem facere labore magnam maxime modi nam nemo neque, provident qui quidem quos recusandae totam ut vel voluptatem? Accusamus amet autem culpa cupiditate eligendi, esse exercitationem in magnam nam officia perspiciatis placeat quo sed similique temporibus velit voluptates! Officia, reiciendis.
+                </p>
+            </section>
+        </article>
+        <article>
+            <section>
+                <!-- 
+                    Con srcset, insertamos separadas por comas distintas imagenes, comunicando al navegador el tamaño en ancho de esta
+                usando una w NO px, de esta manera en cada caso sabrá que imagen mostrar, con sizes, le damos un tamaño cuando cambie
+                el dispositivo desde el que estamos accediendo (necesario el viewport)
+            -->
+                <img srcset="./img/613x640.jpg 640w, ./img/1224x1280.jpg 1200w, ./img/1837x1920.jpg 1920w" sizes="(max-width: 400px) 100vw, (max-width: 768px) 50vw, 1200px" src="./img/1224x1280.png" alt="imagen de un gato blanco/marron claro con ojos azules">
+                <h2>
+                   Un gato muy bonito
+                </h2>
+                <p>
+                El gato bonito te mira, si, dan ganas de acariciarlo, hazlo, no araña es una preciosidad la cual ademas sirve para liberar estres después de un largo dia :D.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aperiam at corporis culpa, dicta dolorum ducimus eaque eius eligendi eos exercitationem id incidunt ipsum iste labore minima minus modi nemo obcaecati odit quaerat quasi ratione repellat reprehenderit saepe sapiente soluta sunt temporibus ullam ut voluptas voluptatem voluptatum. Cumque cupiditate obcaecati officiis voluptatibus! Aspernatur exercitationem iure magnam, nostrum sequi vero.
+                </p>
+            </section>
+            <section>
+                <!-- Con el poster, introducimos una foto que es captura del propio video-->
+                <video controls poster="img/capturaVideo.jpg">
+                     <!-- Con type comunicamos al navegador de que formato es cada video aportado-->
+                    <source src="video/1280x720.mp4" type="video/mp4" />
+                    <source src="video/1280x720-converted.webm" type="video/webm"/>
+                    <!-- Con los siguientes atributos de track, decimos de que tipo es (subtitulos ó subtitulos que no son del mismo idioma)
+                    que el video, srclang el idioma en el que estan y con label un titulo para estos cuando sean leidos -->
+                    <track src="video/caption.vtt" kind="captions" srclang="es" label="Subtitulos" default>
+                    <track src="video/subtitles_en.vtt" kind="subtitles" srclang="en" label="Subtitles">
+                    <!-- Un parrafo por si el recurso no puede mostrarse sirva como alternativa-->
+                    <p>No pudo mostrarse el video</p>
+                </video>
+                <p>
+                    Este gato es muy gracioso por su cara, parece que este asombrado por estar grabado, quizá ve su propio reflejo en esta y preso de este asombro intenta atacarla Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad amet beatae blanditiis commodi culpa ducimus eaque eligendi error et exercitationem facere labore magnam maxime modi nam nemo neque, provident qui quidem quos recusandae totam ut vel voluptatem? Accusamus amet autem culpa cupiditate eligendi, esse exercitationem in magnam nam officia perspiciatis placeat quo sed similique temporibus velit voluptates! Officia, reiciendis.
+                </p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Pie de pagina examen hecho por Pablo Fernandez Dominguez :D</p>
+    </footer>
+</body>
+</html>
