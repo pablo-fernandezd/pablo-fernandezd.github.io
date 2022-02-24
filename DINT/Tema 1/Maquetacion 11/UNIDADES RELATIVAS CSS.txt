@@ -1,0 +1,5 @@
+2em -> FUENTES DEL CONTENEDOR
+2rem -> FUENTES DEL HTML (ROOT)
+margin: 0 auto;
+0 arriba y abajo y auto izquierda y derecha
+margin:(top&booton left&right)
