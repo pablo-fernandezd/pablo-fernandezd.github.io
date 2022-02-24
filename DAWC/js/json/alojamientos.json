@@ -1,0 +1,122 @@
+[
+   {
+      "id":1,
+      "nombre":"Apartamento Pepito",
+      "lugar":"Madrid",
+      "descripcion":"Apartamento cálido, luminoso e impecable.A 3 km del Aeropuerto Adolfo Suárez, IFEMA Feria de Madrid y el estadio WANDA.Junto al Centro Comercial PLENILUNIO. El dormitorio cuenta con cama (150) y zona de trabajo y el salón cuenta con sofá-cama doble, mesa comedor y sillas. Baño completo. La cocina equipada con frigorífico, lavavajillas, horno, lavadora-secadora, cafetera.2 Piscinas adulto y niño (15 jun-15 sept). Pista de pádel, zona infantil. Recinto cerrado y vigilancia 24 hs. Garaje privado.",
+      "tipo":1,
+      "precioNoche":"65",
+      "foto":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/apartamento-luminoso-decorado-con-macrame3-1591781273.jpg?resize=980:*",
+      "servicios":{
+         "wifi":"si",
+         "tv":"si",
+         "microondas":"si",
+         "piscina":"no"
+      }
+   },
+   {
+      "id":2,
+      "nombre":"Apartamento Jorgito",
+      "lugar":"Valladolid",
+      "descripcion":"Desconecta de la rutina en este alojamiento único y relajante.\nRecién reformada, lista para que la disfrutes, su ubicación es una zona muy tranquila, de poco transito por lo que normalmente aparcaras en la puerta de la casa, esta muy bien conectada con las principales vías de la ciudad como la Av Madrid y el paseo de Zorrilla.",
+      "tipo":1,
+      "precioNoche":"60",
+      "foto":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/apartamento-luminoso-decorado-con-macrame3-1591781273.jpg?resize=980:*",
+      "servicios":{
+         "wifi":"no",
+         "tv":"si",
+         "microondas":"no",
+         "piscina":"no"
+      }
+   },
+   {
+      "id":3,
+      "nombre":"Apartamento Manolito",
+      "lugar":"León",
+      "descripcion":"Precioso y acogedor apartamento de estilo clásico con dos habitaciones, dos baños( uno de ellos en suite) y terraza cubierta. Todas las habitaciones son exteriores y el piso tiene una mucha luz con un ambiente muy agradable. Dispone de plaza de garaje grande y la cocina está totalmente equipada.\nEsta situado una zona muy tranquila en el centro de la ciudad, a lado de las estaciones de tren y autobuses, a 3 min del área comercial y 10 del casco antiguo.",
+      "tipo":1,
+      "precioNoche":"53",
+      "foto":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/apartamento-luminoso-decorado-con-macrame3-1591781273.jpg?resize=980:*",
+      "servicios":{
+         "wifi":"si",
+         "tv":"si",
+         "microondas":"si",
+         "piscina":"no"
+      }
+   },
+   {
+      "id":4,
+      "nombre":"Casa Descansa",
+      "lugar":"Albacete",
+      "descripcion":"Casa de campo moderna dentro de urbanización( pista de pádel, minigolf, vóleibol, baloncesto y futbol, tienda de alimentación, preciosas vistas al bosque y pantano, con mucha luz y salón diáfano!\nwifi, chimenea, barbacoa, cine, terraza con jacuzzi, cama elástica, parque infantil y mini rampa de monopatín!",
+      "tipo":3,
+      "precioNoche":"110",
+      "foto":"https://media.er2.co/es/salamanca/5dab15f6a08a9/1600/5dab183097fbd.jpg",
+      "servicios":{
+         "wifi":"si",
+         "tv":"si",
+         "microondas":"si",
+         "piscina":"si"
+      }
+   },
+   {
+      "id":5,
+      "nombre":"Casita Redondela",
+      "lugar":"Lugo",
+      "descripcion":"Tú decides, tranquilidad o no parar en el entorno del embalse de Entrepeñas.\nEn un entorno inmejorable con grandes opciones de actividades y visitas culturales. En la zona conocida como el Mar de Castilla",
+      "tipo":3,
+      "precioNoche":"89",
+      "foto":"https://media.er2.co/es/salamanca/5dab15f6a08a9/1600/5dab183097fbd.jpg",
+      "servicios":{
+         "wifi":"no",
+         "tv":"no",
+         "microondas":"si",
+         "piscina":"no"
+      }
+   },
+   {
+      "id":6,
+      "nombre":"Casa Rural La Fragua",
+      "lugar":"Santander",
+      "descripcion":"Molino rehabilitado con extrema delicadeza que conserva parte de su maquinaria original. Dispone de calefacción central de pellet y estufa de leña.\nCuenta con dos habitaciones dobles y una triple, todas con baño completo privado.\nSalón-comedor con vistas al valle y la garganta. Dispone de sofá cama de apertura italiana y otro baño completo.\nCocina industrial, ideal para los amantes de la gastronomía.\nTodas las estancias tienen espectaculares vistas al río.",
+      "tipo":3,
+      "precioNoche":"92",
+      "foto":"https://media.er2.co/es/salamanca/5dab15f6a08a9/1600/5dab183097fbd.jpg",
+      "servicios":{
+         "wifi":"si",
+         "tv":"si",
+         "microondas":"no",
+         "piscina":"si"
+      }
+   },
+   {
+      "id":7,
+      "nombre":"Hotel Torremangana",
+      "lugar":"Cuenca",
+      "descripcion":"El Hotel Torremangana, de 4 estrellas, está situado en el centro de la ciudad, frente a un hermoso parque que bordea el río Júcar, junto al casco antiguo.\n\nAdemás de las instalaciones mencionadas, todas las habitaciones cuentan con hilo musical y teléfono de línea directa.\n\nEl restaurante La Cocina sirve platos típicos de la zona elaborados con los mejores ingredientes. El hotel ofrece buenos servicios e instalaciones, y la conexión Wi-Fi es gratuita y está disponible en todo el hotel.",
+      "tipo":2,
+      "precioNoche":"72",
+      "foto":"https://pix8.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?ca=6&ce=1&s=1024x768",
+      "servicios":{
+         "wifi":"si",
+         "tv":"si",
+         "microondas":"no",
+         "piscina":"si"
+      }
+   },
+   {
+      "id":8,
+      "nombre":"Melia Sevilla",
+      "lugar":"Sevilla",
+      "descripcion":"El Hotel Meliá Sevilla se encuentra en el centro de Sevilla, junto a la Plaza de España, y presenta un impresionante diseño vanguardista. Ofrece piscina al aire libre de temporada y TV de plasma.\n\nLas habitaciones del Hotel Meliá Sevilla son elegantes y tienen un diseño moderno. Gozan de mucha luz natural y disponen de TV vía satélite con canales internacionales y baño con altavoces de TV.\n\nEl hotel dedica algunas de sus zonas a las habitaciones y servicios exclusivos de The Level. Los huéspedes The Level tienen acceso privado al salón The Level, que proporciona buffet privado y barra libre, cócteles diarios, servicios de prensa y conserjería y servicios previos a la llegada. Las habitaciones incluyen comodidades y artículos de aseo de categoría superior, artículos para niños, servicio de planchado, barra de sonido, TV de pantalla plana con canales vía satélite, cafetera Nespresso y menú de fragancias, entre otros servicios.\n\nEl spa, equipado con 2 bañeras de hidromasaje, hammam y sauna, realiza tratamientos corporales y de belleza por un suplemento.\n\nEl restaurante Mosaico del hotel sirve un desayuno buffet internacional. El hotel también alberga una cafetería junto a la piscina y el elegante salón de cócteles Elyxr. Además, el restaurante Quimera sirve comida internacional a la carta para el almuerzo y la cena, mientras que el Quimera Food & pool ofrece platos internacionales y de barbacoa para la cena, de junio a octubre, y música en directo los jueves y los sábados.\n\nEl Meliá está situado junto al parque María Luisa, a unos 15 minutos a pie de la catedral y el alcázar de Sevilla. Durante la Feria de Sevilla, el hotel organiza un servicio de traslado del establecimiento a la zona de fiestas.",
+      "tipo":2,
+      "precioNoche":"126",
+      "foto":"https://pix8.agoda.net/hotelImages/124/1246280/1246280_16061017110043391702.jpg?ca=6&ce=1&s=1024x768",
+      "servicios":{
+         "wifi":"si",
+         "tv":"si",
+         "microondas":"si",
+         "piscina":"no"
+      }
+   }
+]

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- HEAD  -->
+    <head>
+        <!-- Titulo de el documento html -->
+        <title>Ejercicio Imagenes Responsive</title>
+
+        <!-- meta viewport & codificacion-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Links a hojas de estilo -->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- Fuentes de Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <!-- Iconos de Google font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    </head>
+
+    <!-- BODY  -->
+    <body>
+
+        <!-- HEADER  -->
+        <header>
+
+           
+            
+        </header>
+
+        <!-- Contenedor main para la contenido principal -->
+        <main class="container">
+
+            <!-- Control de botones manual  -->
+            <div class="controles">
+
+                <button onclick="PlayVideo()">Play</button>
+                <button onclick="PauseVideo()">Pausa</button>
+                <button onclick="StopVideo()">Stop</button>
+                <button onclick="RewindVideo()">Rewind</button>
+
+
+            </div>
+
+          <!-- Video Principal del documento  -->
+          <video class="video-mp4" controls poster="./imagenes/lion-g7cd992879_1280.jpg">
+
+            <!-- Fuente del archivo  -->
+            <source src="./videos/Parrot - 9219.mp4" type="video/mp4">
+            
+            <!-- Parrafo si no carga el recurso  -->
+            <p>El video no a sido posible cargarlo en tu navegador</p>
+
+          </video>
+            
+        </main>
+
+        <!-- Elemento Footer del documento -->
+        <footer>
+            <!-- <div class="columnas">
+                <div>Columna 1</div>
+                <div>Columna 2</div>
+                <div>Columna 3</div>
+            </div>      
+             -->
+            <p class="copyrigth">Copyrigth - 2ºDAW Jorge Hernández Flores</p>
+        </footer>
+    </body>
+
+    <!-- Script javaScript -->
+    <script type="text/javascript" src="js/Script_1.js"></script>
+    <script type="text/javascript" src="js/Script_2.js"></script>
+</html>

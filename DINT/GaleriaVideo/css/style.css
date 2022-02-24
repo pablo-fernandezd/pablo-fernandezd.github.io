@@ -1,0 +1,34 @@
+
+body {
+    display:flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.video{
+    width: 35vw;
+    height: 35vh;
+    object-fit: fill;
+}
+
+.video[poster]{
+    width: 35vw;
+    height: 35vh;
+}
+

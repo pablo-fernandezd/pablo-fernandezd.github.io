@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo List</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+</head>
+<body>
+<header>
+</header>
+<main>
+    <div id="div1">
+        <form id="form">
+            <label for="pers">Personas que viajan</label>
+            <input id="pers" type="number" min="1" value="1" required>
+            <label for="noches">Noches para reservar</label>
+            <input id="noches" type="number" min="3" value="3" required>
+            <label for="fecha">Fecha de llegada</label>
+            <input id="fecha" type="date" min="12/01/2002" required>
+            <label for="tipoAlogamieno">Tipo de alojamiento</label>
+            <select id="tipoAlogamieno">
+                <option value="0">Elige un tipo</option>
+            </select>
+            <input type="submit" value="Buscar">
+        </form>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="usuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal">Usuario</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>ID: <span id="idUs"></span></li>
+                        <li>Nombre: <span id="nombre"></span></li>
+                        <li>Lugar: <span id="lugar"></span></li>
+                        <li>Descripción: <span id="descripcion"></span></li>
+                        <li>Precio por noche: <span id="precioNoche"></span></li>
+                        <li>Precio total: <span id="precioTotal"></span></li>
+                        <li id="address">Servicios:
+                            <ul>
+                                <li>Wifi: <span id="wifi"></span>
+                                </li>
+                                <li>Television: <span id="tv"></span>
+                                </li>
+                                <li>Microondas: <span id="microondas"></span>
+                                </li>
+                                <li>Piscina: <span id="piscina"></span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Foto: <img id="foto"></img></li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" id="Reservar2" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="js/mijs.js"></script>
+</body>
+</html>

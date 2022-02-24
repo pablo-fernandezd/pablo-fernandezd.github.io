@@ -1,0 +1,15 @@
+//Aqui importo las variables globales
+@import "variables";
+$miFuente: Helvetica, sans-serif;
+$myColor: red;
+$miTamañoFuente: 12px;
+$miWidth: 900px;
+h1 {
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+  font-family: $miFuente;
+  font-size: $miTamañoFuente;
+}

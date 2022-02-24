@@ -1,0 +1,14 @@
+[
+   {
+      "id":"1",
+      "tipo":"Apartamento"
+   },
+   {
+      "id":"2",
+      "tipo":"Hotel"
+   },
+   {
+      "id":"3",
+      "tipo":"Casa Rural"
+   }
+]

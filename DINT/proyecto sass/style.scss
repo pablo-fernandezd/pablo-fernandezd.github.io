@@ -1,0 +1,14 @@
+$miFuente: Helvetica, sans-serif;
+$myColor: red;
+$miTamañoFuente: 12px;
+$miWidth: 900px;
+h1 {
+  $myColor: green;
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+  font-family: $miFuente;
+  font-size: $miTamañoFuente;
+}

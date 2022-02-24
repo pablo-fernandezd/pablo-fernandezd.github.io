@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2% 1% 2% 1%;
+  }
+
+  header {
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav {
+    color: white;
+    display: flex;
+  }
+
+  nav ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    margin: 15px;
+  }
+
+  nav ul a:hover {
+    background-color: red;
+    color: black;
+  }
+
+  main {
+    display: flex;
+  }
+
+  main section {
+    flex: 25%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: start;
+    display: flex;
+  }
+
+  section img {
+    margin: 0px;
+    height: 10%;
+    padding: 0px;
+    width: 100%;
+    border: 5px solid red;
+  }
+
+  footer {
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2% 1% 2% 1%;
+  }
+
+  .location {
+    font-size: 170%;
+    font-weight: bold;
+  }
+
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  i {
+    content: "Polen ";
+    color: #888;
+  }
+
+  .principal {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2% 1% 2% 1%;
+  }
+
+  .location {
+    font-size: 170%;
+    font-weight: bold;
+  }
+
+  .current {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 6rem;
+  }
+
+  .seven-day {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .seven-day-temp {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .visual {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .temp {
+    font-size: 3rem;
+  }
+
+  .scale {
+    font-size: 1.5rem;
+  }
+
+  div .visual {
+    padding-left: 0.5rem;
+  }
+
+  .description {
+    padding-right: 1rem;
+  }
+
+  .seven-day-fc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+  }
+
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .pcount {
+    display: flex;
+    flex-direction: row;
+  }
+
+  i {
+    content: "Polen ";
+    color: #888;
+  }
+
+  .principal {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .temp-high {
+    font-weight: bolder;
+    color: #505050;
+    margin-right: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

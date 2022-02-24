@@ -1,0 +1,15 @@
+@import "_variables";
+$miFuente: Helvetica, sans-serif;
+$myColor: red;
+$miTamañoFuente: 12px;
+$miWidth: 900px;
+h1 {
+  $myColor2: blue;
+  color: $myColor2;
+}
+
+p {
+  color: $myColor;
+  font-family: $miFuente;
+  font-size: $miTamañoFuente;
+}

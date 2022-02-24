@@ -1,0 +1,149 @@
+@import "_colores.scss";
+@import "_fuentes.scss";
+@import "_responsive.scss";
+
+body{
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+header{
+    background-color: $color-primario;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+#logo .material-icons{
+    font-size: 3rem;
+    color: $color-terciario;
+}
+
+header h1{
+    font-size: 1.8rem;
+    font-family: $fuente-titulos;
+    color: $color-terciario;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a{
+    font-family: $fuente-parrafos;
+    color: $color-terciario;
+    text-decoration: none;
+    padding: 0.2rem;
+}
+
+#menuMovil{
+    display: none;
+}
+
+main{
+    background-color: $color-primario-40;
+    display: flex;
+    justify-content: space-between;
+}
+
+section{
+    flex: 25%;
+    margin: 0.2rem;
+}
+
+img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+footer{
+    background-color: $color-primario;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer section p{
+    font-family: $fuente-parrafos;
+    color: $color-terciario;
+    font-size: 1rem;
+    text-align: center;
+}
+
+//MediaQueries para tamaños de pantalla: moviles
+@media screen and (max-width: $tamanio-movil){
+    #logo .material-icons{
+        font-size: 1.5rem;
+    }
+    
+    header h1{
+        font-size: 1rem;
+        margin-left: 5%;
+    }
+
+    nav ul{
+        display: none;
+    }
+    
+    #menuMovil{
+        display: block;
+        color: $color-terciario;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    section{
+        flex: 100%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer section p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+//MediaQueries para tamaños de pantalla: tablets
+@media screen and (min-width: $tamanio-movil) and (max-width: $tamanio-tablet){
+    #logo .material-icons{
+        font-size: 2rem;
+    }
+    
+    header h1{
+        font-size: 1.5rem;
+        margin-left: 5%;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #menuMovil{
+        display: none;
+    }
+
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  
+    main section{
+        flex: 45%;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+
+}

@@ -1,0 +1,99 @@
+h1 {
+  font-family: Roboto slab;
+}
+
+h2 {
+  font-family: Roboto slab;
+}
+
+h3 {
+  font-family: Roboto slab;
+}
+
+button {
+  background-color: #ffeb3b;
+  color: #000000;
+}
+
+button i {
+  color: #000000;
+}
+
+a {
+  color: #ffffff;
+}
+
+body {
+  display: block;
+  font-family: Roboto;
+  font-size: 18px;
+  background-color: #4a148c;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-size: 18px;
+  background-color: #12005e;
+}
+
+header i {
+  font-size: 50px;
+  color: #ffeb3b;
+}
+
+main {
+  display: flex;
+  width: 95%;
+  height: 900px;
+  background-color: #7c43bd;
+  margin: 20px;
+  color: #ffffff;
+}
+
+aside {
+  padding: 20px;
+  width: 20%;
+  font-family: Roboto;
+  font-size: 18px;
+  background-color: #4a148c;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style-type: none;
+  display: block;
+  justify-content: flex-end;
+}
+
+nav li {
+  font-size: 1.3rem;
+  margin: 2rem;
+}
+
+nav {
+  width: 20%;
+  display: block;
+  font-family: Roboto;
+  font-size: 18px;
+  background-color: #4a148c;
+  color: #ffffff;
+}
+
+section {
+  width: 40%;
+  display: block;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: Roboto slab;
+  font-size: 18px;
+  background-color: #4a148c;
+  color: #000000;
+}
+
+/*# sourceMappingURL=styles.css.map */

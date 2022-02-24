@@ -1,0 +1,102 @@
+$Primary: #4a148c;
+$Primary-light:#7c43bd;
+$Primary-dark:#12005e;
+$Secondary:#ffeb3b;
+$Secondary-light:#ffff72;
+$Secondary-dark:#c8b900;
+$Text-Primary:#ffffff;
+$text-secondary:#000000;
+$Font-primary:Roboto;
+$Font-secondary:Roboto slab;
+h1{
+    font-family: $Font-secondary;
+}
+h2{
+    font-family: $Font-secondary;
+}
+h3{
+    font-family: $Font-secondary;
+}
+button{
+    background-color: $Secondary;
+    color: $text-secondary;
+}
+button i{
+    color: #000000;
+}
+a{
+    color: $Text-Primary;
+}
+body {
+    display: block;
+    font-family: $Font-primary;
+    font-size: 18px;
+    background-color: $Primary;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family: $Font-primary;
+    font-size: 18px;
+    background-color: $Primary-dark;
+}
+header i{
+   font-size: 50px;
+   color:$Secondary;
+
+}
+main {  
+    display: flex;
+    width: 95%;
+    height: 900px;
+    background-color: $Primary-light;
+    margin: 20px;
+    color: $Text-Primary;
+}
+
+aside {
+    padding: 20px;
+    width: 20%;
+    font-family: $Font-primary;
+    font-size: 18px;
+    background-color: $Primary;
+    color: $Text-Primary;
+}
+
+nav ul {
+    list-style-type:none;
+    display: block;
+    justify-content: flex-end;
+}
+
+nav li {
+    
+    font-size: 1.3rem;
+    margin: 2rem;
+}
+
+nav {
+    width: 20%;
+    display: block;
+    font-family: $Font-primary;
+    font-size: 18px;
+    background-color: $Primary;
+    color: $Text-Primary;
+}
+
+section {
+    width: 40%;
+    display: block;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    font-family: $Font-secondary;
+    font-size: 18px;
+    background-color: $Primary;
+    color: $text-secondary;
+}
+
