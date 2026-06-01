@@ -485,6 +485,27 @@ img { display: block; max-width: 100%; }
 .project-links a:hover { color: var(--accent); }
 .project-links svg { width: 20px; height: 20px; }
 
+.wip-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  margin-top: -0.2rem;
+}
+.wip-live {
+  background: rgba(100,255,218,0.1);
+  border: 1px solid rgba(100,255,218,0.3);
+  color: var(--accent2);
+}
+.wip-progress {
+  background: rgba(255,179,71,0.1);
+  border: 1px solid rgba(255,179,71,0.3);
+  color: #ffb347;
+}
+
 .featured-badge {
   display: inline-block;
   font-family: var(--font-mono);
