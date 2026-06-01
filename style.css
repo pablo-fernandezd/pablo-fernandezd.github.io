@@ -572,6 +572,33 @@ img { display: block; max-width: 100%; }
 }
 
 /* ── Credential download buttons ────────────────────────────────── */
+/* ── Degree average badge ───────────────────────────────────────── */
+.degree-average {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: rgba(78,154,241,0.07);
+  border: 1px solid rgba(78,154,241,0.2);
+  border-radius: var(--radius);
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.85rem;
+}
+.degree-avg-number {
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.degree-avg-label {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+.degree-avg-label strong { color: var(--white); }
+
+/* ── Credential download buttons ────────────────────────────────── */
 .credential-links {
   display: flex;
   flex-wrap: wrap;
