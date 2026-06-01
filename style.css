@@ -34,6 +34,77 @@ a:hover { color: var(--accent2); }
 ul { list-style: none; }
 img { display: block; max-width: 100%; }
 
+/* ── Custom cursor ──────────────────────────────────────────────── */
+@media (pointer: fine) {
+  * { cursor: none !important; }
+}
+.cursor-dot {
+  position: fixed;
+  top: -4px; left: -4px;
+  width: 8px; height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.05s linear;
+  will-change: transform;
+}
+.cursor-ring {
+  position: fixed;
+  top: -18px; left: -18px;
+  width: 36px; height: 36px;
+  border: 1.5px solid rgba(78,154,241,0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  will-change: transform;
+  transition: width 0.2s ease, height 0.2s ease,
+              top 0.2s ease, left 0.2s ease,
+              border-color 0.2s ease;
+}
+.cursor-ring.cursor-grow {
+  width: 56px; height: 56px;
+  top: -28px; left: -28px;
+  border-color: var(--accent2);
+}
+
+/* ── Hero canvas ────────────────────────────────────────────────── */
+.hero-canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+#hero .hero-content { position: relative; z-index: 1; }
+#hero .hero-scroll   { position: absolute; z-index: 1; }
+
+/* ── Card spotlight glow ────────────────────────────────────────── */
+.project-card, .stat-card, .edu-card, .timeline-card {
+  position: relative;
+  overflow: hidden;
+}
+.project-card::before, .stat-card::before,
+.edu-card::before, .timeline-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    400px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(78,154,241,0.07),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+.project-card.spotlight::before, .stat-card.spotlight::before,
+.edu-card.spotlight::before, .timeline-card.spotlight::before {
+  opacity: 1;
+}
+.project-card > *, .stat-card > *,
+.edu-card > *, .timeline-card > * { position: relative; z-index: 1; }
+
 /* ── Scrollbar ──────────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
