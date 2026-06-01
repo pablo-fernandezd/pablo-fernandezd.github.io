@@ -561,6 +561,31 @@ img { display: block; max-width: 100%; }
 .timeline-edu .timeline-card {
   border-color: rgba(100,255,218,0.2);
 }
+.timeline-avg-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: rgba(100,255,218,0.06);
+  border: 1px solid rgba(100,255,218,0.2);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.9rem;
+  margin-bottom: 0.9rem;
+}
+.timeline-avg-num {
+  font-family: var(--font-mono);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent2);
+  line-height: 1;
+  flex-shrink: 0;
+}
+.timeline-avg-label {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+.timeline-avg-label strong { color: var(--white); }
+
 .timeline-edu-note {
   font-size: 0.85rem;
   color: var(--text-muted);
