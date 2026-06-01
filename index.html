@@ -1,92 +1,396 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <title>Mis proyectos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pablo Fernandez – Software Developer</title>
+  <meta name="description" content="Pablo Fernandez – Software Developer specialising in Python, Java Spring Boot, Data Engineering and AI." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/index.html" style="display: flex">
-                    <img src="img/favicon.png" alt="" width="30" height="30">
-                    <p>Mis proyectos</p>
-                </a>
-            </div>
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/">INICIO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a id="Nosotros" class="nav-link" href="/DAWC">DAWC</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="Servicios" class="nav-link" href="/DAWS">DAWS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="Contacto" class="nav-link" href="/DAW">DAW</a>
-                        </li>
-                        <li class="nav-item">
-                            <a id="Alumno" class="nav-link" href="/DINT">DINT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <ol class="breadcrumb" style="margin: 15px">
-            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
-        </ol>
-        <nav aria-label="breadcrumb">
 
-        </nav>
-    </header>
-    <main class="container">
-        <h2>Temas de interes</h2>
-        <div id="clicable">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">PF<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="btn-outline-sm">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, my name is</p>
+      <h1 class="hero-name">Pablo Fernandez.</h1>
+      <h2 class="hero-tagline">I build scalable software &amp; intelligent systems.</h2>
+      <p class="hero-description">
+        Software Developer based in <span class="accent">Madrid, Spain</span> specialising in
+        Python Data Engineering, Java Spring Boot, and AI-driven applications.
+        Currently contributing to cloud-scale data infrastructure at
+        <span class="accent">Accenture</span>.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">See my work</a>
+        <a href="https://github.com/pablo-fernandezd" target="_blank" rel="noopener" class="btn-outline">GitHub</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a passionate software developer with a strong foundation in
+            <strong>Python (Data/Backend)</strong> and <strong>Java Spring Boot</strong>.
+            My experience spans designing scalable microservices architectures,
+            automating complex ETL pipelines, and integrating Cloud solutions on
+            <strong>GCP</strong> and <strong>AWS</strong>.
+          </p>
+          <p>
+            At Accenture I work on a "Unified Backlog" platform that centralises
+            strategic risk management data for a major banking client — processing
+            Excel backlogs from multiple geographies into Google BigQuery using
+            Pandas, Regex, and MD5-based identity resolution.
+          </p>
+          <p>
+            Outside work I'm fascinated by <strong>Machine Learning research</strong>,
+            volleyball (I've refereed at national and international level), and building
+            side projects that blend computer vision with real-world sports problems.
+          </p>
+          <div class="skills-grid">
+            <div class="skill-col">
+              <h4>Languages</h4>
+              <ul>
+                <li>Python</li>
+                <li>Java 17</li>
+                <li>TypeScript / JS</li>
+                <li>SQL</li>
+              </ul>
             </div>
-            <div id="carrusel" class="carousel-inner">
-                <div class="carousel-item active" onclick="window.open('/DINT/Tema 4/accesibilidad');">
-                    <img src="img/interfaces.jfif" height="464px" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Accesibilidad web</h5>
-                        <p>Proyecto sobre accesibilidad web</p>
-                    </div>
-                </div>
-                <div class="carousel-item" onclick="window.open('/DINT/Tema 2/imagenesResponsive');">
-                    <img src="img/responsive.jfif" height="464px" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Imagenes responsive</h5>
-                        <p>Ejercicio de imágenes responsive</p>
-                    </div>
-                </div>
+            <div class="skill-col">
+              <h4>Frameworks</h4>
+              <ul>
+                <li>Spring Boot</li>
+                <li>React / Angular</li>
+                <li>TensorFlow / PyTorch</li>
+                <li>Flask / Node.js</li>
+              </ul>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="skill-col">
+              <h4>Cloud &amp; Data</h4>
+              <ul>
+                <li>Google BigQuery (GCP)</li>
+                <li>AWS</li>
+                <li>Pandas · OpenPyXL</li>
+                <li>Docker · CI/CD</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Professional<br>Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">CI/CD Pipelines<br>Streamlined</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Developers<br>Mentored</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">SQL Queries<br>Optimised</span>
+          </div>
         </div>
-    <footer>
-        <p>Esta es una página/repositorio donde poder acceder a todas las practicas y documentación que he ido desarrollando a lo largo del segundo curso DAW (Desarrollo de Aplicaciones Web)
-            2021-2022, del alumno Pablo Fernández Domínguez</p>
-    </footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">02.</span> Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jul 2025 – Present</div>
+          <div class="timeline-card">
+            <h3>Business Architecture Analyst <span class="accent">@ Accenture</span></h3>
+            <p class="timeline-location">Madrid, Spain &middot; Banking Sector</p>
+            <ul>
+              <li>Develop and maintain ETL pipelines using <strong>Pandas</strong> and <strong>OpenPyXL</strong> to ingest, clean, and normalise Excel-based backlogs from Spain, Mexico, and Latam.</li>
+              <li>Integrate with <strong>Google BigQuery</strong> for high-volume data warehousing using WRITE_TRUNCATE strategies and schema management.</li>
+              <li>Implement <strong>MD5 hashing &amp; Regex</strong> algorithms to generate unique identifiers and track orphaned records across dataset versions.</li>
+              <li>Engineer CSV automation scripts for Jira bulk imports and develop REST API endpoints consumed by a <strong>Vue.js</strong> frontend.</li>
+              <li>Translate banking business rules into Python logic including automatic date calculation and hierarchical mapping of strategic initiatives.</li>
+            </ul>
+            <div class="tag-list">
+              <span>Python</span><span>Pandas</span><span>GCP</span><span>BigQuery</span>
+              <span>REST API</span><span>Vue.js</span><span>Jira</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Mar 2022 – Aug 2024</div>
+          <div class="timeline-card">
+            <h3>Backend Software Developer <span class="accent">@ Getronics</span></h3>
+            <p class="timeline-location">Valladolid, Spain &middot; Ministry of Education CyL</p>
+            <ul>
+              <li>Built and maintained scalable <strong>RESTful APIs</strong> with Spring Boot, secured with Spring Security and ADFS for the <em>Stilus</em> education management system.</li>
+              <li>Implemented three interactive user interfaces using <strong>Angular</strong>, improving UX and front-end performance.</li>
+              <li>Mentored <strong>four intern developers</strong>: onboarding, code review, and best-practices coaching.</li>
+              <li>Migrated and validated timetable schedules using <strong>XML/XSD</strong> in collaboration with Peñalara.</li>
+              <li>Optimised over <strong>50 SQL queries</strong> and streamlined <strong>10+ CI/CD pipelines</strong> across all deployment environments.</li>
+            </ul>
+            <div class="tag-list">
+              <span>Java 17</span><span>Spring Boot</span><span>Angular</span>
+              <span>SQL</span><span>Docker</span><span>CI/CD</span><span>ADFS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Sep 2019 – Aug 2024</div>
+          <div class="timeline-card">
+            <h3>Technical Operations &amp; Referee <span class="accent">@ Royal Spanish Volleyball Federation</span></h3>
+            <p class="timeline-location">Valladolid, Spain</p>
+            <ul>
+              <li>Designed and deployed a <strong>real-time scoreboard automation system</strong> using Node.js and RTMP servers to insert live scores into broadcast streams on <strong>AWS</strong>.</li>
+              <li>Managed installation and maintenance of electronic scoreboards across 16 courts and 5 venues simultaneously during major national events.</li>
+              <li>Refereed national and international competitions; score-sheet official for the <strong>Spanish Superliga 2</strong>.</li>
+            </ul>
+            <div class="tag-list">
+              <span>Node.js</span><span>AWS</span><span>RTMP</span><span>Real-time Systems</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">03.</span> Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M20.188 10.934c.2.646.312 1.333.312 2.066s-.112 1.42-.312 2.066M3.812 10.934A9.01 9.01 0 003.5 13c0 .733.112 1.42.312 2.066M10.934 3.812A9.01 9.01 0 0113 3.5c.733 0 1.42.112 2.066.312M10.934 20.188A9.01 9.01 0 0113 20.5c.733 0 1.42-.112 2.066-.312"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/pablo-fernandezd/RefereeSignalsDetection" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="featured-badge">Featured</div>
+          <h3 class="project-title">Referee Signals Detection Platform</h3>
+          <p class="project-desc">
+            A real-world computer vision system developed in collaboration with the
+            <strong>Royal Spanish Volleyball Federation (RFEVB)</strong> that detects and
+            classifies referee hand signals in live volleyball footage using two custom
+            YOLO models. Features automated YouTube ingestion, a React annotation interface,
+            and GPU-accelerated inference on 1,386+ labelled images across 8 signal classes.
+          </p>
+          <div class="tag-list">
+            <span>Python</span><span>YOLOv8</span><span>PyTorch</span>
+            <span>Flask</span><span>React</span><span>FFmpeg</span><span>Computer Vision</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/pablo-fernandezd/6057CEM-2425" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Neural Network Iris Classifier</h3>
+          <p class="project-desc">
+            Implements and evaluates two custom neural network architectures — a
+            <strong>ResNet-inspired</strong> residual network and an
+            <strong>attention-based</strong> model — for Iris species classification.
+            Includes full hyperparameter optimisation via KerasTuner, confusion matrices,
+            and comprehensive evaluation metrics.
+          </p>
+          <div class="tag-list">
+            <span>Python</span><span>TensorFlow</span><span>Keras</span>
+            <span>KerasTuner</span><span>scikit-learn</span><span>Jupyter</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/pablo-fernandezd/nightMinerBot-3" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">NightMinerBot</h3>
+          <p class="project-desc">
+            A Selenium-based browser automation tool for research purposes.
+            Generates <strong>Cardano wallets</strong>, automates CIP-8
+            cryptographic signature simulation using JavaScript injection, and manages
+            wallet pool JSON files. Runs in headless mode for efficiency.
+          </p>
+          <div class="tag-list">
+            <span>Python</span><span>Selenium</span><span>Cryptography</span>
+            <span>Cardano</span><span>Automation</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/pablo-fernandezd/Angular2Oauth" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Angular Federated Auth Frontend</h3>
+          <p class="project-desc">
+            A TypeScript/Angular frontend implementing <strong>federated OAuth
+            authentication</strong> (ADFS). Demonstrates secure token handling,
+            protected route guards, and integration with Spring Boot backends —
+            mirroring patterns used in production at Getronics.
+          </p>
+          <div class="tag-list">
+            <span>Angular</span><span>TypeScript</span><span>OAuth</span>
+            <span>ADFS</span><span>Spring Boot</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div class="project-links"></div>
+          </div>
+          <h3 class="project-title">Live Scoreboard Automation</h3>
+          <p class="project-desc">
+            Real-time scoreboard automation system for the
+            <strong>Royal Spanish Volleyball Federation</strong>. Uses Node.js and
+            RTMP server integration to inject live scores into broadcast streams,
+            deployed on <strong>AWS</strong> across 16 courts and 5 simultaneous
+            venues during national championships.
+          </p>
+          <div class="tag-list">
+            <span>Node.js</span><span>AWS</span><span>RTMP</span>
+            <span>Real-time</span><span>Broadcast</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">04.</span> Education</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card">
+          <div class="edu-badge">BSc</div>
+          <div class="edu-info">
+            <h3>Artificial Intelligence <span class="accent">&mdash; First Class Hons</span></h3>
+            <p class="edu-school">Coventry University &middot; United Kingdom</p>
+            <ul>
+              <li>Machine Learning &amp; Deep Learning — Python, TensorFlow, scikit-learn</li>
+              <li>Data Science &amp; Big Data Analytics — Pandas, NumPy, SQL</li>
+              <li>AI Ethics &amp; Responsible AI Development</li>
+              <li>Project Management &amp; Agile Methodologies (Scrum, Kanban)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-badge">HND</div>
+          <div class="edu-info">
+            <h3>Web Application Development</h3>
+            <p class="edu-school">IES Ribera de Castilla &middot; Spain &middot; 2020–2022</p>
+            <ul>
+              <li>Full Stack Web Development — Java, JavaScript, HTML/CSS, MongoDB, SQL</li>
+              <li>Database Management — normalisation, stored procedures, indexing</li>
+              <li>Software Deployment &amp; Hosting — on-premise and cloud environments</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <h2 class="section-title"><span class="accent">05.</span> Get In Touch</h2>
+      <p class="contact-text">
+        I'm always open to interesting conversations, new opportunities, or
+        collaboration on ambitious projects. Feel free to reach out — I'll do
+        my best to get back to you promptly.
+      </p>
+      <div class="contact-actions">
+        <a href="mailto:pafernin@gmail.com" class="btn-primary">Say Hello</a>
+        <a href="https://www.linkedin.com/in/pablo-fernandez-dev" target="_blank" rel="noopener" class="btn-outline">LinkedIn</a>
+      </div>
+      <div class="contact-details">
+        <span>Madrid, Spain</span>
+        <span>+34 602 246 307</span>
+        <span>pafernin@gmail.com</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      Designed &amp; built by <span class="accent">Pablo Fernandez</span>
+      &nbsp;&middot;&nbsp;
+      <a href="https://github.com/pablo-fernandezd" target="_blank" rel="noopener">pablo-fernandezd</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-<script src="js/bootstrap.bundle.min.js"></script>
