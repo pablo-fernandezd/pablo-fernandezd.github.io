@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pablo Fernandez – CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #1a56db;
+      --text:   #111827;
+      --muted:  #6b7280;
+      --border: #e5e7eb;
+      --bg:     #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 10.5pt;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
+      padding: 0;
+    }
+
+    /* ── Page wrapper ── */
+    .page {
+      max-width: 210mm;
+      margin: 0 auto;
+      padding: 14mm 16mm 14mm 16mm;
+    }
+
+    /* ── Header ── */
+    header { margin-bottom: 14px; }
+    .header-top { display: flex; justify-content: space-between; align-items: flex-start; }
+    h1 {
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: var(--text);
+      line-height: 1.1;
+    }
+    .header-title {
+      font-size: 11pt;
+      font-weight: 500;
+      color: var(--accent);
+      margin-top: 3px;
+    }
+    .header-contact {
+      text-align: right;
+      font-size: 9pt;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+    .header-contact a { color: var(--muted); text-decoration: none; }
+    .header-contact a:hover { color: var(--accent); }
+
+    /* ── Divider ── */
+    hr {
+      border: none;
+      border-top: 1.5px solid var(--accent);
+      margin: 10px 0 12px;
+    }
+    .hr-light {
+      border-top: 1px solid var(--border);
+      margin: 8px 0 10px;
+    }
+
+    /* ── Section title ── */
+    .section { margin-bottom: 14px; }
+    .section-title {
+      font-size: 9pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 7px;
+    }
+
+    /* ── Summary ── */
+    .summary p {
+      font-size: 10pt;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    /* ── Two-column skills ── */
+    .skills-cols {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px 20px;
+    }
+    .skill-group h4 {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 3px;
+    }
+    .skill-group ul { list-style: none; }
+    .skill-group li {
+      font-size: 9.5pt;
+      color: var(--text);
+      padding: 1px 0;
+    }
+    .skill-group li::before {
+      content: '· ';
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* ── Experience / Education entry ── */
+    .entry { margin-bottom: 12px; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .entry-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .entry-company {
+      font-size: 10.5pt;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .entry-date {
+      font-size: 9pt;
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .entry-sub {
+      font-size: 9.5pt;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+    .entry-location {
+      font-size: 9pt;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+    .entry ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .entry li {
+      font-size: 9.5pt;
+      color: #374151;
+      padding: 1.5px 0 1.5px 12px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .entry li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 8pt;
+      top: 0.25em;
+    }
+    strong { color: var(--text); font-weight: 600; }
+
+    /* ── Projects ── */
+    .project-entry { margin-bottom: 9px; }
+    .project-name {
+      font-size: 10pt;
+      font-weight: 700;
+      color: var(--text);
+      display: inline;
+    }
+    .project-tech {
+      font-size: 9pt;
+      color: var(--muted);
+      display: inline;
+      margin-left: 6px;
+    }
+    .project-entry p {
+      font-size: 9.5pt;
+      color: #374151;
+      line-height: 1.5;
+      margin-top: 2px;
+    }
+    .project-link {
+      font-size: 9pt;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* ── Education ── */
+    .edu-grade {
+      display: inline-block;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: var(--accent);
+      font-size: 8.5pt;
+      font-weight: 600;
+      padding: 1px 7px;
+      border-radius: 3px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    /* ── Footer row ── */
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.5pt;
+      color: var(--muted);
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+    .footer-row a { color: var(--accent); text-decoration: none; }
+
+    /* ── Print ── */
+    @media print {
+      body { background: white; }
+      .page { padding: 10mm 14mm; max-width: 100%; }
+      @page { margin: 0; size: A4; }
+      a { text-decoration: none !important; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-top">
+      <div>
+        <h1>Pablo Fernandez</h1>
+        <div class="header-title">Python Backend Developer &amp; Data Engineer</div>
+      </div>
+      <div class="header-contact">
+        Madrid, Spain<br>
+        +34 602 246 307<br>
+        <a href="mailto:pafernin@gmail.com">pafernin@gmail.com</a><br>
+        <a href="https://pablo-fernandezd.github.io" target="_blank">pablo-fernandezd.github.io</a><br>
+        <a href="https://github.com/pablo-fernandezd" target="_blank">github.com/pablo-fernandezd</a>
+      </div>
+    </div>
+  </header>
+  <hr>
+
+  <!-- SUMMARY -->
+  <section class="section summary">
+    <div class="section-title">Professional Summary</div>
+    <p>
+      Software Developer with <strong>3+ years of professional experience</strong> specialising in
+      <strong>Python backend development</strong> (Flask, REST APIs, document processing) and
+      <strong>Java Spring Boot</strong> microservices. Currently building data infrastructure and API
+      layers for the banking sector at Accenture, working with <strong>GCP / BigQuery</strong>
+      and <strong>Flask</strong> within a cross-functional agile team. BSc in Artificial Intelligence
+      (First Class Honours, Coventry University). Combines strong engineering fundamentals with hands-on
+      AI/ML experience and a track record of delivering complex systems under agile methodologies.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-cols">
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <ul>
+          <li>Python (primary)</li>
+          <li>Java 17</li>
+          <li>TypeScript / JavaScript</li>
+          <li>SQL</li>
+          <li>Kotlin</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Frameworks &amp; Tools</h4>
+        <ul>
+          <li>Flask · FastAPI</li>
+          <li>Spring Boot · Spring Security</li>
+          <li>React · Angular · Next.js</li>
+          <li>Pandas · OpenPyXL</li>
+          <li>TensorFlow · PyTorch · YOLOv8</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h4>Cloud, Data &amp; DevOps</h4>
+        <ul>
+          <li>Google Cloud Platform (GCP)</li>
+          <li>BigQuery · Cloud Storage</li>
+          <li>AWS (EC2, RTMP)</li>
+          <li>Docker · CI/CD</li>
+          <li>Git · Jira · Scrum</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section">
+    <div class="section-title">Experience</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Business Architecture Analyst &nbsp;·&nbsp; <span class="entry-company">Accenture</span></span>
+        <span class="entry-date">Jul 2025 – Present</span>
+      </div>
+      <div class="entry-sub">Python Backend Developer &amp; Data Engineer</div>
+      <div class="entry-location">Madrid, Spain &middot; Banking Sector &middot; 4-person agile team</div>
+      <ul>
+        <li>Design and build <strong>REST API endpoints with Flask</strong> to expose processed banking data to a Vue.js frontend, covering document ingestion, validation, and transformation workflows.</li>
+        <li>Develop document processing pipelines using <strong>Pandas</strong> and <strong>OpenPyXL</strong> to ingest, clean, and normalise multi-geography Excel backlogs (Spain, Mexico, Latam) at scale.</li>
+        <li>Integrate with <strong>Google Cloud Platform (GCP)</strong> and <strong>BigQuery</strong>: schema management, WRITE_TRUNCATE strategies, and high-volume data warehousing for advanced analytics.</li>
+        <li>Implement <strong>MD5 hashing &amp; Regex</strong> algorithms for unique identifier generation and orphaned-record tracking across dataset versions.</li>
+        <li>Translate complex banking business rules into Python: automatic date logic (start/end-of-month) and hierarchical mapping of strategic risk initiatives.</li>
+      </ul>
+    </div>
+
+    <div class="hr-light"></div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Backend Software Developer &nbsp;·&nbsp; <span class="entry-company">Getronics</span></span>
+        <span class="entry-date">Mar 2022 – Aug 2024</span>
+      </div>
+      <div class="entry-location">Valladolid, Spain &middot; Ministry of Education of Castilla y León &middot; Stilus project</div>
+      <ul>
+        <li>Built and maintained scalable <strong>RESTful APIs with Java 17 / Spring Boot</strong>, secured with Spring Security and ADFS, for a region-wide school management system used across Castilla y León.</li>
+        <li>Implemented three interactive UI modules with <strong>Angular</strong>, improving user experience for thousands of end-users.</li>
+        <li>Mentored <strong>four intern developers</strong>: onboarding, code review, and coding best practices.</li>
+        <li>Collaborated with client (Ministry of Education) in Scrum ceremonies, gathering requirements and aligning delivery with business goals.</li>
+        <li>Optimised <strong>50+ SQL queries</strong> and coordinated <strong>10+ CI/CD pipelines</strong> ensuring consistent deployments across all environments.</li>
+        <li>Migrated and validated timetable schedules in partnership with Peñalara using <strong>XML/XSD</strong>, ensuring relational data integrity throughout the process.</li>
+      </ul>
+    </div>
+
+    <div class="hr-light"></div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Technical Operations &amp; Referee &nbsp;·&nbsp; <span class="entry-company">Royal Spanish Volleyball Federation</span></span>
+        <span class="entry-date">Sep 2019 – Aug 2024</span>
+      </div>
+      <div class="entry-location">Valladolid, Spain</div>
+      <ul>
+        <li>Designed and deployed a <strong>real-time scoreboard automation system</strong> using Node.js and RTMP servers to insert live scores into broadcast streams on <strong>AWS</strong>, covering 16 courts across 5 venues.</li>
+        <li>Refereed national and international competitions; scoresheet official for the <strong>Spanish Superliga 2</strong>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section">
+    <div class="section-title">Personal Projects</div>
+
+    <div class="project-entry">
+      <span class="project-name">Referee Signals Detection</span>
+      <span class="project-tech">Python · YOLOv8 · Flask · React · PyTorch</span>
+      <p>Computer vision platform built in collaboration with the <strong>Royal Spanish Volleyball Federation (RFEVB)</strong>. Two custom YOLO models detect and classify referee hand signals in live footage; React annotation interface; GPU inference on 1,386+ labelled images across 8 signal classes.</p>
+    </div>
+
+    <div class="project-entry">
+      <span class="project-name">QuizFactory</span>
+      <span class="project-tech">Python · OpenAI GPT-4o · LangChain · FastAPI · Appium · Next.js</span>
+      <p>Fully automated AI content pipeline for Instagram. GPT-4o generates branded quiz posts from per-account Brand DNA; Pillow renders 1080×1920 Story images; Appium + instagrapi publishes on schedule. MCP server for AI-agent fleet control. Live at <a class="project-link" href="https://www.instagram.com/instaquizes.medicine/" target="_blank">@instaquizes.medicine</a>.</p>
+    </div>
+
+    <div class="project-entry">
+      <span class="project-name">Codetolls</span>
+      <span class="project-tech">Python · FastAPI · React · TypeScript · PostgreSQL · Vercel</span>
+      <p>SaaS monetisation platform for Python developers. Single SDK call gates desktop tools; real-time revenue dashboard with payout management. Deployed at <a class="project-link" href="https://codetolls-7loin2ell-pablo-fernandezds-projects.vercel.app/" target="_blank">codetolls.vercel.app</a>.</p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section">
+    <div class="section-title">Education</div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">BSc (Hons) Artificial Intelligence <span class="edu-grade">1st Class · 74.8%</span></span>
+        <span class="entry-date">Awarded Jul 2025</span>
+      </div>
+      <div class="entry-location">Coventry University &middot; United Kingdom &middot; Full-time (Top-up)</div>
+      <ul>
+        <li>Artificial Neural Networks <strong>96%</strong> &middot; Intelligent Agents 78% &middot; Individual Project (Computer Vision) 72%</li>
+        <li>Project Management 71% &middot; Security 67% &middot; Machine Learning &amp; Related Applications 65%</li>
+      </ul>
+    </div>
+
+    <div class="hr-light"></div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Higher National Diploma – Web Application Development</span>
+        <span class="entry-date">2020 – 2022</span>
+      </div>
+      <div class="entry-location">IES Ribera de Castilla &middot; Valladolid, Spain</div>
+      <ul>
+        <li>Full-stack development (Java, JavaScript, HTML/CSS, MongoDB, SQL), database management, cloud deployment.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER ROW -->
+  <div class="footer-row">
+    <span>Spanish: Native &nbsp;·&nbsp; English: B2 (Certified, UK studies)</span>
+    <span>
+      Portfolio: <a href="https://pablo-fernandezd.github.io" target="_blank">pablo-fernandezd.github.io</a>
+      &nbsp;·&nbsp;
+      References available on LinkedIn
+    </span>
+  </div>
+
+</div>
+</body>
+</html>
