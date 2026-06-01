@@ -92,6 +92,13 @@ img { display: block; max-width: 100%; }
 }
 .btn-outline:hover { border-color: var(--accent2); color: var(--accent2); }
 
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.btn-cv svg { width: 16px; height: 16px; flex-shrink: 0; }
+
 .btn-outline-sm {
   padding: 0.4rem 1rem;
   border: 1px solid var(--accent);
