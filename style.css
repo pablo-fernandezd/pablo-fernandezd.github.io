@@ -816,20 +816,51 @@ footer a:hover { color: var(--accent); }
 @media (max-width: 768px) {
   .section { padding: 70px 0; }
 
+  /* ── Mobile nav ── */
   .nav-links {
     position: fixed;
     top: var(--nav-h); left: 0; right: 0;
     background: rgba(10,14,23,0.98);
     backdrop-filter: blur(12px);
     flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-    transform: translateY(-110%);
-    transition: transform var(--trans);
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height 0.35s ease, visibility 0.35s ease;
+    z-index: 99;
   }
-  .nav-links.open { transform: translateY(0); }
+  .nav-links.open {
+    max-height: 400px;
+    visibility: visible;
+  }
+  .nav-links li {
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-links li:last-child { border-bottom: none; }
+  .nav-links a {
+    display: block;
+    padding: 1.1rem 2rem;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    width: 100%;
+  }
+  /* Reset the Contact button — plain link in mobile menu */
+  .nav-links .btn-outline-sm {
+    border: none;
+    border-radius: 0;
+    padding: 1.1rem 2rem;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    background: none;
+    width: 100%;
+  }
   .hamburger { display: flex; }
 
+  /* ── Layout ── */
   .hero-actions { flex-direction: column; align-items: flex-start; }
   .projects-grid { grid-template-columns: 1fr; }
   .project-card.featured { grid-column: auto; }
